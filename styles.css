@@ -13,6 +13,17 @@ a:focus,.btn:focus{outline:2px solid var(--accent);outline-offset:2px}
 .container{max-width:1100px;margin:0 auto;padding:18px}
 .topline{background:#122134;color:#cfe3ff;padding:8px 16px;text-align:center;font-size:.95rem}
 
+/* round avatar next to name */
+.avatar{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;        /* crops to a neat circle */
+  display: block;
+  border: 2px solid var(--border);
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+}
+
 /* full-page background */
 .site-bg{
   position:fixed; inset:0;
@@ -100,4 +111,5 @@ html,body{background:transparent}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr}
 }
+
 
