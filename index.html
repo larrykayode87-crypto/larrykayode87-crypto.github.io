@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- site-wide background (image at assets/hero.jpg) -->
   <div class="site-bg" aria-hidden="true"></div>
+
   <div class="topline">This temporary site was created for an assignment. My primary portfolio may differ.</div>
 
   <header class="site-header container">
@@ -28,14 +30,13 @@
     </nav>
   </header>
 
-  <!-- Hero with background image in assets/hero.jpg -->
   <section class="hero container">
     <div class="hero-copy">
-      <h2>Shipping clear, reliable solutions—fast.</h2>
+      <h2>Practical tech that works—clean, tested, documented.</h2>
       <p>
-        Computer Systems Technician student (Mohawk) with 5+ years in technical support.
-        I turn messy problems into small, testable steps and document everything so it’s repeatable.
-        Comfortable across Linux, Git, and JavaScript—with real experience helping people, not just machines.
+        I’m <strong>Olanrewaju Kanmi Kayode</strong>, an IT Support Specialist with 5+ years helping users stay productive.
+        I break issues into small, testable steps, fix the root cause, and leave clear documentation.
+        Recent experience includes end-user support for the Ontario Government and customer-facing troubleshooting in ISP environments.
       </p>
       <div class="hero-cta">
         <a class="btn" href="#projects">See Projects</a>
@@ -43,94 +44,59 @@
       </div>
     </div>
     <ul class="stats">
-      <li><span class="big">5+</span><span>Years in support</span></li>
+      <li><span class="big">5+</span><span>Years in Support</span></li>
       <li><span class="big">Linux</span><span>Bash • Git • CLI</span></li>
       <li><span class="big">Web</span><span>JS • HTML • CSS</span></li>
     </ul>
   </section>
 
   <main class="container">
-    <!-- Projects -->
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <h3 class="section-title">Projects</h3>
 
       <div class="grid">
-        <article class="card project">
-          <div class="card-head">
-            <h4>Grades Manager (Web)</h4>
-            <span class="tags">JavaScript · DOM · HTML</span>
-          </div>
-          <p>
-            A small web app to add/edit/delete course grades and compute averages.
-            Focus on clean DOM updates and simple input checks.
-          </p>
-          <ul class="bullets">
-            <li>Single-responsibility functions for readability</li>
-            <li>Graceful handling when the list is empty</li>
-          </ul>
-        </article>
-
-        <article class="card project">
-          <div class="card-head">
-            <h4>Linux Demo Scripts</h4>
-            <span class="tags">Bash · Linux · CLI</span>
-          </div>
-          <p>
-            Short scripts (multicopy, multicat) with a diff walkthrough; demonstrates safe flags and plain-English narration.
-          </p>
-          <ul class="bullets">
-            <li>Accurate flag explanations (e.g., recursive, show hidden)</li>
-            <li>Editor-only workflow (no cat/echo to create files)</li>
-          </ul>
-        </article>
-
-        <article class="card project">
-          <div class="card-head">
-            <h4>Color Switcher PR</h4>
-            <span class="tags">Git · GitHub · JS</span>
-          </div>
-          <p>
-            Open-source contribution adding an extra random color and cleaning handlers.
-            Process emphasized branching, PRs, and tidy diffs.
-          </p>
-          <ul class="bullets">
-            <li>Feature branch with focused commits</li>
-            <li>Clear PR description and code comments</li>
-          </ul>
-        </article>
-
-        <!-- Ready for your React Native work -->
+        <!-- Deck of Cards -->
         <article class="card project highlight">
           <div class="card-head">
             <h4>Deck of Cards UI (React Native)</h4>
             <span class="tags">React Native · State · Gestures</span>
           </div>
           <p>
-            Interactive card stack with swipe/drag, stateful deck controls, and smooth transitions.
+            Interactive deck with swipe/drag, regroup, and reset. Emphasis on predictable state and smooth transitions.
           </p>
           <ul class="bullets">
-            <li>Clean component structure, prop-driven state</li>
-            <li>Tested behaviors for swipe thresholds</li>
+            <li>Componentized deck; prop-driven state and guard rails for invalid moves</li>
+            <li>Gesture handlers with threshold tuning for natural swipe behavior</li>
           </ul>
+          <div class="card-actions">
+            <a class="btn tiny" href="#" target="_blank" rel="noopener">View Code</a>
+            <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
         </article>
 
+        <!-- MySafe -->
         <article class="card project">
           <div class="card-head">
-            <h4>Map Markers & Safety Levels</h4>
+            <h4>MySafe — Map Markers & Safety Levels</h4>
             <span class="tags">React Native · Maps</span>
           </div>
           <p>
-            Map view showing safety level markers with “jump to” behavior and guarded updates to current location.
+            Map view showing color-coded safety markers with “jump to” navigation and protected current-location behavior.
           </p>
           <ul class="bullets">
-            <li>Clamp logic prevents accidental jumps</li>
-            <li>Clear visual states for markers</li>
+            <li>Marker levels: clear visual states; legend + accessible labels</li>
+            <li>Jump-to action clamps camera movement; prevents unintended location jumps</li>
           </ul>
+          <div class="card-actions">
+            <a class="btn tiny" href="#" target="_blank" rel="noopener">View Code</a>
+            <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="skills" class="section">
       <h3 class="section-title">Skills</h3>
       <div class="card">
@@ -138,33 +104,36 @@
           <div>
             <h5>Core</h5>
             <div class="badges">
-              <span class="badge">Linux (bash, grep, diff, git)</span>
-              <span class="badge">JavaScript (ES6+)</span>
-              <span class="badge">HTML/CSS</span>
+              <span class="badge">Windows 10/11</span>
+              <span class="badge">Linux (bash, grep, diff)</span>
+              <span class="badge">JavaScript (ES6+) • HTML • CSS</span>
               <span class="badge">Python scripting</span>
+              <span class="badge">Office 365</span>
             </div>
           </div>
           <div>
             <h5>Support</h5>
             <div class="badges">
-              <span class="badge">Windows Support</span>
-              <span class="badge">Intune basics</span>
-              <span class="badge">Customer Support</span>
+              <span class="badge">End-User Support</span>
+              <span class="badge">Troubleshooting & Documentation</span>
+              <span class="badge">ServiceNow • eSMT</span>
+              <span class="badge">Remote support tools</span>
             </div>
           </div>
           <div>
             <h5>Collaboration</h5>
             <div class="badges">
               <span class="badge">Git & GitHub (branches, PRs)</span>
-              <span class="badge">Docs & troubleshooting</span>
-              <span class="badge">Project handoffs</span>
+              <span class="badge">Clear handoffs</span>
+              <span class="badge">Team communication</span>
+              <span class="badge">Time management</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Education -->
+    <!-- EDUCATION -->
     <section id="education" class="section">
       <h3 class="section-title">Education</h3>
       <div class="timeline card">
@@ -173,13 +142,13 @@
           <div class="t-body">
             <div class="t-title"><strong>Mohawk College</strong> — Computer Systems Technician</div>
             <div class="t-sub">Finishing 2025</div>
-            <p>Relevant courses: Data Structures & Algorithms, .NET/C#, Web Dev, Linux & Shell Scripting, Project Management.</p>
+            <p>Coursework: Data Structures & Algorithms, .NET/C#, Web Dev, Linux & Shell Scripting, Project Management.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Resume -->
+    <!-- RESUME -->
     <section id="resume" class="section">
       <h3 class="section-title">Resume</h3>
       <div class="card">
@@ -193,13 +162,15 @@
       <p class="tiny-note muted">If the preview doesn’t load in your browser, use the buttons above.</p>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <h3 class="section-title">Contact</h3>
       <div class="card">
         <ul class="contact">
-          <li>Email: <a href="mailto:larry.kayode87@gmail.com">larry.kayode87@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/larrykayode87-crypto">github.com/larrykayode87-crypto</a></li>
+          <li>Email: <a href="mailto:lanrelootun@gmail.com">lanrelootun@gmail.com</a></li>
+          <li>Phone: <a href="tel:+14372541701">+1 (437) 254-1701</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/olanrewaju-kayode-406067304/" target="_blank" rel="noopener">linkedin.com/in/olanrewaju-kayode-406067304/</a></li>
+          <li>GitHub: <a href="https://github.com/larrykayode87-crypto" target="_blank" rel="noopener">github.com/larrykayode87-crypto</a></li>
           <li>Location: Caledonia, ON</li>
         </ul>
       </div>
@@ -217,4 +188,3 @@
   </script>
 </body>
 </html>
-
