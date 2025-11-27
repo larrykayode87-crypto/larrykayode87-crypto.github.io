@@ -109,4 +109,34 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr}
 }
+/* === Full-page background image (applies to ALL sections) === */
+.site-bg{
+  position: fixed;
+  inset: 0;
+  background: url("/assets/hero.jpg") center / cover no-repeat;
+  /* nice parallax feel */
+  background-attachment: fixed;
+  z-index: -1;
+}
+.site-bg::after{
+  content: "";
+  position: absolute; inset: 0;
+  /* darken for readability across the page */
+  background: linear-gradient(180deg, rgba(7,10,14,.72), rgba(7,10,14,.82));
+}
+
+/* make page itself transparent so the image shows through */
+html, body{ background: transparent !important; }
+
+/* turn off the old hero-only background */
+.hero{ background: none !important; }
+.hero::before{ display: none !important; }
+
+/* glass effect for all cards + hero tiles */
+.hero-copy, .stats li, .card{
+  background: rgba(18,26,38,.60) !important;
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+}
+
 
